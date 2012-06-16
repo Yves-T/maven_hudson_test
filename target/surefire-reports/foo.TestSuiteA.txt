@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
-Test set: foo.AppTest
+Test set: foo.TestSuiteA
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.369 sec <<< FAILURE!
-testMultiply(foo.AppTest)  Time elapsed: 0.006 sec  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec <<< FAILURE!
+testMultiply(foo.AppTest)  Time elapsed: 0.001 sec  <<< FAILURE!
 junit.framework.AssertionFailedError: expected:<50> but was:<2>
 	at junit.framework.Assert.fail(Assert.java:50)
 	at junit.framework.Assert.failNotEquals(Assert.java:287)
@@ -23,6 +23,14 @@ junit.framework.AssertionFailedError: expected:<50> but was:<2>
 	at junit.framework.TestSuite.runTest(TestSuite.java:243)
 	at junit.framework.TestSuite.run(TestSuite.java:238)
 	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
 	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:115)
 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)

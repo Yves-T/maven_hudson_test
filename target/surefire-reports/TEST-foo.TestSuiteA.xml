@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="1" time="0.37" errors="0" skipped="0" tests="2" name="foo.AppTest">
+<testsuite failures="1" time="0.034" errors="0" skipped="0" tests="2" name="foo.TestSuiteA">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/jre/lib"/>
@@ -65,8 +65,8 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.107" classname="foo.AppTest" name="testApp"/>
-  <testcase time="0.006" classname="foo.AppTest" name="testMultiply">
+  <testcase time="0.001" classname="foo.AppTest" name="testApp"/>
+  <testcase time="0.002" classname="foo.AppTest" name="testMultiply">
     <failure message="expected:&lt;50&gt; but was:&lt;2&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;50&gt; but was:&lt;2&gt;
 	at junit.framework.Assert.fail(Assert.java:50)
 	at junit.framework.Assert.failNotEquals(Assert.java:287)
@@ -87,6 +87,14 @@
 	at junit.framework.TestSuite.runTest(TestSuite.java:243)
 	at junit.framework.TestSuite.run(TestSuite.java:238)
 	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
 	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:115)
 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
