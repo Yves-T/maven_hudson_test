@@ -5,10 +5,10 @@ import java.util.Date;
 
 import org.hibernate.Session;
 
-public class Test {
+public class AppMain {
 	InputStream inputStream;
 
-	public Test() {
+	public AppMain() {
 		this.inputStream = this.getClass().getResourceAsStream("/foo/sql.sql");
 	}
 
@@ -16,7 +16,7 @@ public class Test {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Test test = new Test();
+		AppMain test = new AppMain();
 
 		// try {
 		// System.out.println("location = " + test.inputStream);
