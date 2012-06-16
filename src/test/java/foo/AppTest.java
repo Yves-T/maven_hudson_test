@@ -30,6 +30,13 @@ public class AppTest extends TestCase {
 	 * Rigourous Test :-)
 	 */
 	public void testApp() {
-		assertTrue(true);
+		// assertTrue(true);
+		AppMain tester = new AppMain();
+		assertNotNull("result not null", tester);
+	}
+
+	public void testMultiply() {
+		AppMain tester = new AppMain();
+		assertEquals(50, tester.multiply(10, 5));
 	}
 }
