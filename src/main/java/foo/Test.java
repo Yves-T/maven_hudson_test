@@ -1,7 +1,6 @@
 package foo;
 
 import java.io.InputStream;
-import java.sql.SQLException;
 import java.util.Date;
 
 import org.hibernate.Session;
@@ -19,15 +18,14 @@ public class Test {
 	public static void main(String[] args) {
 		Test test = new Test();
 
-		try {
-			System.out.println("location = " + test.inputStream);
-			Database.resetDatabase(
-					test.inputStream,
-					"jdbc:derby:/Users/yves/Downloads/derbytest/test2;create=true;user=APP;password=APP");
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		// try {
+		// System.out.println("location = " + test.inputStream);
+		// Database.resetDatabase(
+		// test.inputStream,
+		// "jdbc:derby:/Users/yves/Downloads/derbytest/test2;create=true;user=APP;password=APP");
+		// } catch (SQLException e) {
+		// e.printStackTrace();
+		// }
 		System.out.println("Hibernate one to many (Annotation)");
 		Session session = HibernateUtil.getSessionFactory().openSession();
 
@@ -52,5 +50,9 @@ public class Test {
 
 		session.getTransaction().commit();
 		System.out.println("Done");
+	}
+
+	public int multiply(int x, int y) {
+		return x / y;
 	}
 }
